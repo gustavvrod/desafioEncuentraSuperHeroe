@@ -1,0 +1,15 @@
+/*navbar*/
+
+//navbar 
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: $dark;
+    & a {
+        color: white;
+    }
+    &__logo {
+        width: 40px;
+        margin: 10px;
+    }
+}

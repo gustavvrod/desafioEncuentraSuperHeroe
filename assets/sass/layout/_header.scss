@@ -1,0 +1,17 @@
+/*header*/
+
+//header
+.header {
+    &__figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__figure__img {
+        width: 50%;
+        max-width: 300px;
+        height: auto;
+        margin-top: 1em;
+    }
+}

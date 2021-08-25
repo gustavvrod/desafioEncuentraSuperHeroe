@@ -1,0 +1,27 @@
+/*main*/
+
+//main
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+    &__busqueda {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em 0;
+        max-width: 600px;
+    }
+    &__button {
+        background-color: $blue;
+        color: $white;
+        margin-top: 1em;
+        max-width: 100px;
+        border-radius: 5px;
+    }
+    &__card__image {
+        width: 100%;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Encuentra tu super heroe</title>
+    <meta name="author" content="Gustavo Rodriguez">
+    <meta name="description" content="Desafio seccion API">
+    <!-- my style -->
+    <link rel="stylesheet" href="assets\css\main.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar__brand"><img src="assets\img\sh2.jpg" alt="" class="navbar__logo">SuperHero</a>
+    </nav>
+
+    <!-- header -->
+    <header class="header">
+        <figure class="header__figure">
+            <img class="header__figure__img" src="assets\img\sh1.jpg" alt="header imagen super hero">
+        </figure>
+    </header>
+
+    <!-- main -->
+    <main class="main p-4">
+        <form class="main__busqueda">
+            <h3 class="main__title">Encuentra tu SuperHero</h3>
+            <label class="main__input__text" for="inputHero">Ingresa el número del SuperHero a buscar</label>
+            <input id="mainEntrada" class="main__input" type="text" name="inputHero">
+            <input id="mainButton" class="main__button" type="button" value="Buscar">
+        </form>
+
+        <div id="mainResultado" class="main__resultado row">
+            <div class="card mb-3 col-sm-6 col-xl-12">
+                <div class="row no-gutters">
+                    <div id="cardImage" class="col-md-4"></div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 id="superName" class="card-title"></h5>
+                            <ul class="list-group list-group-flush">
+                                <li id="superConexiones" class="list-group-item"></li>
+                                <li id="superPublicado" class="list-group-item"></li>
+                                <li id="superOcupacion" class="list-group-item"></li>
+                                <li id="superPrimeraAparicion" class="list-group-item"></li>
+                                <li id="superAltura" class="list-group-item"></li>
+                                <li id="superPeso" class="list-group-item"></li>
+                                <li id="superAlianzas" class="list-group-item"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="chartContainer" class="col-sm-6 col-xl-12">
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/helpers/jquery-3.5.1.js"></script>
+    <!-- bundle bootstrap -->
+    <script src="assets/helpers/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery 3.6.0 -->
+    <script src="assets\js\jquery-3.6.0.js"></script>
+    <!-- canvas js 3.3.2 -->
+    <script src="assets\js\canvasjs.min.js"></script>
+
+    <!-- script js -->
+    <script src="assets\js\script.js"></script>
+</body>
+
+</html>
